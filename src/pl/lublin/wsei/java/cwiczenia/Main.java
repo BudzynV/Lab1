@@ -10,13 +10,12 @@ public class Main {
        do {
            System.out.print("Podaj pierwsza liczbe: ");
            num1 = input.nextInt();
-           if (num1 != 0)
-           {
+           if (num1 == 0) break;
                System.out.print("Podaj druga liczbe: ");
                num2 = input.nextInt();
-           }
+               if (num2 == 0) break;
            System.out.printf("Wynik dodawania %d + %d = %d%n", num1, num2, num1 + num2);
-       } while ((num1 != 0) && (num2 != 0));
+       } while (true);
     }
 
 }
